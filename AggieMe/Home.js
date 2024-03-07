@@ -1,4 +1,3 @@
-// file to navigate to different pages directly (if you're commiting to main)
 import React from 'react';
 import { View, Button } from 'react-native';
 
@@ -13,6 +12,10 @@ function Home({ navigation }) {
       <Button
         title="Go to Profile"
         onPress={() => navigation.navigate('ProfileScreen')}
+      />
+      <Button
+        title="Go to Login"
+        onPress={() => navigation.navigate('LoginScreen')}
       />
       {/* Add navigation to other screens as needed */}
     </View>

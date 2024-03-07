@@ -101,4 +101,5 @@ const styles = StyleSheet.create({
     borderColor: '#ddd', // Adjust the color to match the screenshot
     fontSize: 16, // Adjust the size as needed
   },
+  // ... other styles ...
 });

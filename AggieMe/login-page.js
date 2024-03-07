@@ -1,20 +1,20 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
 
-const Registration = (props) => {
+const Login = (props) => {
     return(
         <View style= {{flexDirection: 'column'}}>
 
-            <Text style={styles.register}>REGISTER</Text>
+            <Text style={styles.login}>LOGIN</Text>
             <Text style={[styles.creds, styles.email]}>Your email:</Text>
             <TextInput style={styles.emailbox}/>
             <Text style={[styles.creds, styles.pass]}>Password:</Text>
             <TextInput style={styles.passbox}/>
-            <TouchableOpacity style={styles.registerButton}>
-                <Text style={styles.registerButtonText}>REGISTER</Text>
+            <TouchableOpacity style={styles.loginButton}>
+                <Text style={styles.loginButtonText}>LOGIN</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => props.navigation.navigate('Login')}>
-                <Text style={styles.accountexist}>Already have an account? Log in</Text>
+            <TouchableOpacity onPress={() => props.navigation.navigate('Register')}>
+                <Text style={styles.accountexist}>Don't have an account? Register</Text>
             </TouchableOpacity>
         </View>
     );
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     //     width: 50,
     //     height: 50,
     // },
-    register: {
+    login: {
         position: 'relative',
         top: 100,
         textAlign: 'center',
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_800ExtraBold',
         fontWeight: 'bold',
     },
-    registerButton: {
+    loginButton: {
         backgroundColor: '#004AAD',
         alignSelf: 'center', // Center the button horizontally
         justifyContent: 'center', // Center the button vertically
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         height: 35,
         top: 70
     },
-    registerButtonText: {
+    loginButtonText: {
         color: 'white',
         textAlign: 'center', // Center the text inside the button
         fontFamily: 'Jua_400Regular',
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     },
     emailbox: {
         position: 'relative',
-        height: 40, 
+        height: 40,
         borderColor: 'gray', 
         borderWidth: 1,
         borderRadius: 15,
@@ -103,4 +103,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Registration;
+export default Login;
