@@ -3,6 +3,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './Home'; // Make sure to import Home
 import Registration from './registration-page';
 import ProfileScreen from './profile-page';
+import HomePage from './homepage';
+import LaunchPage from './launch-page';
+import Login from './login-page';
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text } from 'react-native';
@@ -24,10 +27,13 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="LaunchPage">
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Registration" component={Registration} />
+        <Stack.Screen name="HomePage" component={HomePage} />
         <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="LaunchPage" component={LaunchPage} />
         {/* Add other screens here */}
       </Stack.Navigator>
       <StatusBar style="auto" />

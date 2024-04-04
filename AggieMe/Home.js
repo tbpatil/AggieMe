@@ -11,6 +11,10 @@ function Home({ navigation }) {
         onPress={() => navigation.navigate('Registration')}
       />
       <Button
+        title="Go to Dashboard"
+        onPress={() => navigation.navigate('HomePage')}
+      />
+      <Button
         title="Go to Profile"
         onPress={() => navigation.navigate('ProfileScreen')}
       />

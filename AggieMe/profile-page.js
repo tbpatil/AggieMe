@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Image, Button } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import * as ImagePicker from 'expo-image-picker';
+//import * as ImagePicker from 'expo-image-picker';
 import { TextInput } from 'react-native';
 
 export default function ProfileScreen() {
